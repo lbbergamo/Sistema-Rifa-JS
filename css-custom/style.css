@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+.id {
+  width: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.disponivel {
+  color: black;
+  background-color: rgb(217, 255, 180);
+  text-align: center;
+  font-weight: bold;
+}
+
+.botao {
+  width: 2em;
+  height: 2em;
+}
+
+.botaodisponivel {
+  background-color: rgb(217, 255, 180);
+}
+
+/* MODAL - JANELA */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  -webkit-box-shadow: 5px 4px 19px -6px rgba(0, 0, 0, 0.74);
+  box-shadow: 5px 4px 19px -6px rgba(0, 0, 0, 0.74);
+  border-radius: 0.9rem;
+  padding: 0.5em;
+}
+
+.teste {
+  display: inline-flex;
+}
+
+.card-text {
+  padding: 0px;
+  font-size: 80%;
+  margin-bottom: 0;
+}
+
+.card-body {
+  padding: 0.2em;
+  margin: 4%;
+}
+
+header {
+  background: black;
+  padding: 1em;
+}
+
+.topo {
+  text-align: center;
+  display: inline-flex;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table tr td {
+  border: none !important;
+}
+
+.menu {
+  background-color: #6c757d;
+  color: white;
+  box-shadow: 5px 4px 19px -6px rgba(0, 0, 0, 0.74);
+  margin-bottom: 2em;
+  align-content: center;
+}
+
+.centro {
+  align-content: center;
+  margin-left: 40%;
+}
+
+.modal2 {
+  position: fixed;
+  top: 80%;
+  width: 20%;
+
+  z-index: 100;
+  right: 0pt;
+  display: block;
+
+}
+
+.informativo {
+  padding: 2%;
+  text-align: center;
+  box-shadow: 5px 4px 19px -6px rgba(0, 0, 0, 0.74);
+}
+
+.close {
+  text-align: right;
+}
+
+.resultado {
+  display: block;
+
+
+}

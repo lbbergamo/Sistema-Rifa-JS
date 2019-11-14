@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css-custom/style.css" rel="stylesheet">
+  <title>Sistema de Rifa - 2019 </title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+  <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+  <script src="js-custom/modelo/templates.js" async></script>
+
+  <script>
+    require(['dist/excellentexport'], function (ee) {
+      window.ExcellentExport = ee;
+    });
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <img src="img/logo-vertical-branco.png" alt="logotipo da Unisanta" class="img-fluid">
+    <div class="topo"> Sistema de Rifa 2019</div>
+
+
+  </header>
+  <div class="menu">
+
+    <div class="btn-group centro" role="group" aria-label="Grupo de botões com dropdown aninhado">
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Pesquisar
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <a class="dropdown-item" id="btn-nome" href="#">Por Nome</a>
+          <a class="dropdown-item" id="btn-number" href="#">Por Numero</a>
+        </div>
+      </div>
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Relatorio
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <a class="dropdown-item" id="relatorioDisp" href="#">Disponivel</a>
+          <a class="dropdown-item" id="relatorioIndisp" href="#">Vendidos</a>
+          <a class="dropdown-item" id="relatorioGrafico" href="#">Grafico</a>
+        </div>
+      </div>
+
+      <button type="button" id="btn-sorteio" class="btn btn-secondary">Gerar Sorteio</button>
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Configurações
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <a class="dropdown-item" download="somedata.xls" href="#"
+            onclick="return ExcellentExport.excel(this, 'table-rifa', 'Sheet Name Here');">Salvando em Excel</a>
+          <a class="dropdown-item" id="btnExpor" href="#">Salvar</a>
+          <a class="dropdown-item" href="#">Importar</a>
+          <a class="dropdown-item" href="#">Apagar/Reniciar Rifa</a>
+        </div>
+      </div>
+      <button type="button" class="btn btn-secondary">Ajuda</button>
+    </div>
+
+
+  </div>
+  <div class="container">
+    <div class="table-responsive-xl">
+      <table class="table table-sm tabela-rifa" id="table-rifa">
+
+      </table>
+    </div>
+
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-content">
+          HAHHAHAHAH
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="modalInformativo" class="modal2">
+
+    <!-- Modal content -->
+    <div class="modal-content informativo">
+      <span class="close">&times;</span>
+      <div id="modal-content">
+        Para realizar o cadastro de uma rifa, clique duas vezes na rifa desejada
+
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+<footer>
+</footer>
+
+
+<script src="js-custom/modelo/rifa.js"></script>
+<script src="js-custom/newrifa.js"></script> <!-- para iniciar a rifa -->
+<script src="js-custom/incluindo.js"> </script>
+<script src="js-custom/modal.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js-custom/pesquisa.js" async></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+<script src="js-custom/grafico.js"></script>
+<script src="js-custom/relatoriodisponivel.js"></script>
+<script src="js-custom/relatorioindisponivel.js"></script>
+<script src="js-custom/sorteio.js"></script>
+
+</html>
