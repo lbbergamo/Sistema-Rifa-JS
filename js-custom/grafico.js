@@ -1,6 +1,5 @@
 var disponivel = parseFloat(50 - (relatorioPesquisa()));
 var indisponivel = relatorioPesquisa();
-console.log(rifas)
 
 function relatorioPesquisa() {
     let indisponivel = 0;
@@ -14,8 +13,7 @@ function relatorioPesquisa() {
     return indisponivel;
 }
 
-console.log(indisponivel);
-console.log(disponivel);
+
 var data = [
     {
         value: indisponivel,

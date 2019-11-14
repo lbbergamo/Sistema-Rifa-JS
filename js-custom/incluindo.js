@@ -5,7 +5,6 @@ for (let index = 0; index < rifasid.length; index++) {
     let rifaTable = rifasid[index];
     rifaTable.addEventListener("dblclick", function () {
         let id = rifaTable.querySelector(".card-title").textContent;
-        console.log(id)
         if (rifas[id - 1].status) {
             modal.style.display = "block";
             conteudomodal.innerHTML = template_modal(id);
@@ -15,9 +14,7 @@ for (let index = 0; index < rifasid.length; index++) {
             conteudomodal.innerHTML = template_edit(rifas[id - 1]);
             botaoSalvar(id - 1);
         }
-        console.log(rifas[id - 1].status)
     })
-
 }
 window.onclick = function (event) {
     if (event.target == modal) {
@@ -27,18 +24,14 @@ window.onclick = function (event) {
 function botaoSalvar(id) {
     var botaoSalvar = document.getElementById("salvar-view");
     botaoSalvar.addEventListener('click', function () {
-        console.log("ESTOU FUNCIONDANDO - BOTAO SALVAR ");
         var formview = document.querySelector("#form-view");
         var dados = obtendoInfoView(formview, id);
-        console.log(dados);
-        
         var r = confirm("Você tem certeza?");
         if (r == true) {
             rifas[id].importando(dados.id, dados.nome, dados.telefone);
             trocandoDados(rifas[id]);
             closeModal();
         }
-        console.log(rifas)
     })
  }
 function obtendoInfoView(form, id) {

@@ -5,11 +5,11 @@ function template_modal(id) {
       <form id="form-view">
    
             <label for=''>Nome</label>
-      <input type='text' name='nameview' id='nameview' class='form-control' placeholder='' aria-describedby='helpId'>
+      <input type='text' name='nameview' id='nameview' class='form-control' placeholder='' aria-describedby='helpId' required>
       <small id='helpId' class='text-muted'>Nome completo</small>
       <p>
       <label for=''>Telefone</label>
-       <input type='number' class='form-control' name='telefoneview' id='telefoneview' aria-describedby='helpId' placeholder=''>
+       <input type='number' class='form-control' name='telefoneview' id='telefoneview' aria-describedby="telefoneview" placeholder='(XX)XXXXX-XXXX' maxlength="12" required>
        <small id='helpId' class='form-text text-muted'>Telefone (XX)XXXXX-XXXX</small></div>
        </p>
        <button type='button' class='btn btn-primary' id='salvar-view'>Salvar</button>  
@@ -31,7 +31,7 @@ function template_edit(rifa) {
              <p>
                  <label for=''>Telefone</label>
                  <input type='number' class='form-control' name='telefoneview' id='telefoneview'
-                     aria-describedby='helpId' placeholder='${rifa.telefone}' >
+                 aria-describedby="telefoneview" placeholder='${rifa.telefone}' maxlength="12" required >
                  <small id='helpId' class='form-text text-muted'>Telefone (XX)XXXXX-XXXX</small>
      </div>
  </p>
