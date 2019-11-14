@@ -1,26 +1,21 @@
 console.log("Estou funcionando - incluind.js");
 var tabela = document.querySelector("#table-rifa");
-var rifasid = document.querySelectorAll(".card-rifa");
+    var rifasid = document.querySelectorAll(".card-rifa");
 for (let index = 0; index < rifasid.length; index++) {
     let rifaTable = rifasid[index];
     rifaTable.addEventListener("dblclick", function () {
         let id = rifaTable.querySelector(".card-title").textContent;
         console.log(id)
-
-
         if (rifas[id - 1].status) {
             modal.style.display = "block";
             conteudomodal.innerHTML = template_modal(id);
             botaoSalvar(id - 1);
         } else {
-
             modal.style.display = "block";
             conteudomodal.innerHTML = template_edit(rifas[id - 1]);
             botaoSalvar(id - 1);
         }
         console.log(rifas[id - 1].status)
-
-
     })
 
 }
