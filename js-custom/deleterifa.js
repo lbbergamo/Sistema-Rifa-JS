@@ -12,3 +12,13 @@ botaoexclusaoRifa.addEventListener('click', function () {
 
 })
 
+var botaoexclusao = document.querySelector("#btnDel");
+botaoexclusao.addEventListener('click', function () {
+    event.preventDefault();
+    console.log('Botão Funcionando - botao exclusaoRifa')
+    for (let index = 0; index <= 9; index++) {
+        document.getElementById("table-rifa").deleteRow(0)
+    }
+    localStorage.removeItem('rifa');
+})
+
