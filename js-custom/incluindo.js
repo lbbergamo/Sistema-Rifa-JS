@@ -27,7 +27,7 @@ function botaoSalvar(id) {
         var formview = document.querySelector("#form-view");
         var dados = obtendoInfoView(formview, id);
         var r = confirm("Você tem certeza?");
-        if (r == true) {
+        if (r == true ) {
             rifas[id].importando(dados.id, dados.nome, dados.telefone);
             trocandoDados(rifas[id]);
             closeModal();
@@ -40,6 +40,15 @@ function obtendoInfoView(form, id) {
         nome: form.nameview.value,
         telefone: form.telefoneview.value
     }
+
+    if(form.nameview.value.length == 0){
+        console.log("Dado Nao preenchido")
+    }
+
+    if(form.telefoneview.value.length == 0){
+        console.log("Telefone não preenchido")
+    }
+
     return dados
 }
 

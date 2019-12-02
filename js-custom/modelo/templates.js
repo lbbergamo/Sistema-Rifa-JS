@@ -26,7 +26,7 @@ function template_edit(rifa) {
          <form id="form-view">
              <label for=''>Nome</label>
              <input type='text' name='nameview' id='nameview' class='form-control' placeholder='${rifa.nome}'
-                 aria-describedby='helpId'>
+                 aria-describedby='helpId' required>
              <small id='helpId' class='text-muted'>Nome completo</small>
              <p>
                  <label for=''>Telefone</label>
