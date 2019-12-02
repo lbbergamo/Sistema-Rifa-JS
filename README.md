@@ -14,7 +14,12 @@ No Grafico foi utilizado o Pie do Chart.js.
 ```
 
 ### Fotos do Projeto
-![Foto 1 - Site](https://raw.githubusercontent.com/lbbergamo/TP-Web2-AtribuicaodeNotas/master/Informativos/tela-inicial.png)
+![Foto 1 - Site](https://raw.githubusercontent.com/lbbergamo/Sistema-Rifa-JS/master/informativo/home.jpg)
+![Foto 2 - Grafico](https://raw.githubusercontent.com/lbbergamo/Sistema-Rifa-JS/master/informativo/grafico.jpg)
+![Foto 3 - Excel](https://raw.githubusercontent.com/lbbergamo/Sistema-Rifa-JS/master/informativo/excel.jpg)
+![Foto 4 - Site](https://raw.githubusercontent.com/lbbergamo/Sistema-Rifa-JS/master/informativo/config.jpg)
+![Foto 5 - Site](https://raw.githubusercontent.com/lbbergamo/Sistema-Rifa-JS/master/informativo/pesquisa_nome.jpg)
+![Foto 6 - Site](https://raw.githubusercontent.com/lbbergamo/Sistema-Rifa-JS/master/informativo/pesquisa_numero.jpg)
 
 
 ## Construido com
