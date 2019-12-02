@@ -101,8 +101,9 @@ function template_pesquisa_numero() {
 
 function template_relatorio_grafico() {
     return `
+    <h1> Relatorio em Grafico </h1>
     <canvas id="relatorioDisponivel" width="600" height="400"></canvas>
-    
+    <div id="legendaCanvas"></div>
     `
 }
 

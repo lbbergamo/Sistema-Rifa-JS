@@ -13,26 +13,32 @@ function relatorioPesquisa() {
     return indisponivel;
 }
 
+var data = {
+    labels: [
+        "Disponivel",
+        "Indisponivel"
+    ],
+    datasets: [
+        {
+            data: [disponivel, indisponivel],
+            backgroundColor: [
+                "#46BFBD",
+                "#F7464A",
+            ]
+        }]
+};
 
-var data = [
-    {
-        value: indisponivel,
-        color:"#F7464A",
-        highlight: "#FF5A5E",
-        label: "Indisponivel"
-    },
-    {
-        value: disponivel,
-        color: "#46BFBD",
-        highlight: "#5AD3D1",
-        label: "Disponivel"
-    },
-];
+
+
 var relatorioON = document.getElementById("relatorioGrafico");
 relatorioON.addEventListener('click', function () {
     modal.style.display = "block";
     conteudomodal.innerHTML = template_relatorio_grafico();
     var ctx = document.getElementById("relatorioDisponivel").getContext("2d");
-new Chart(ctx).Pie(data);
-})
+    var pieChart = new Chart(ctx, {
+        type: 'pie',
+        data: data
+      });
 
+})
+// 
